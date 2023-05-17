@@ -1,25 +1,22 @@
 import { Route, Routes } from "react-router-dom"
 // import { Authorized } from "./views/Authorized"
-import { ApplicationViews } from "./views/ApplicationViews"
-import { NavBar } from "./nav/NavBar"
 // import { Login } from "./auth/Login"
 // import { Register } from "./auth/Register"
 import "./AustinsTreeCo.css"
-import { ServiceList } from "./services/ServiceList"
+import { NavBar } from "./components/nav/NavBar"
+import { ServiceList } from "./components/services/ServiceList"
+import { ApplicationViews } from "./components/views/ApplicationViews"
+
 
 
 export const AustinsTreeCo = () => {
 	return <Routes>
-		{/* <Route path="/login" element={<Login />} />
-		<Route path="/register" element={<Register />} /> */}
-
 		<Route path="*" element={
 				<>
 					<NavBar />
 					<ApplicationViews />
 				</>
 		} />
-		<Route path="/services" element={ <ServiceList />} />
 	</Routes>
 }
 
