@@ -7,9 +7,18 @@ export const NavBar = () => {
     return (
         <ul className="navbar">
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/tickets">Tickets</Link>
+                <Link className="navbar__link" to="/home">Home</Link>
             </li>
-            {
+            <li className="navbar__item active">
+                <Link className="navbar__link" to="/services">Services</Link>
+            </li>
+            <li className="navbar__item active">
+                <Link className="navbar__link" to="/gallery">Gallery</Link>
+            </li>
+            <li className="navbar__item active">
+                <Link className="navbar__link" to="/contact">Contact</Link>
+            </li>
+            {/* {
                 localStorage.getItem("tree_user")
                     ? <li className="navbar__item navbar__logout">
                         <Link className="navbar__link" to="" onClick={() => {
@@ -18,7 +27,7 @@ export const NavBar = () => {
                         }}>Logout</Link>
                     </li>
                     : ""
-            }
+            } */}
         </ul>
     )
 }
