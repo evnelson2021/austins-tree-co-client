@@ -5,6 +5,7 @@ import { NavBar } from "./nav/NavBar"
 // import { Login } from "./auth/Login"
 // import { Register } from "./auth/Register"
 import "./AustinsTreeCo.css"
+import { ServiceList } from "./services/ServiceList"
 
 
 export const AustinsTreeCo = () => {
@@ -13,14 +14,12 @@ export const AustinsTreeCo = () => {
 		<Route path="/register" element={<Register />} /> */}
 
 		<Route path="*" element={
-			// <Authorized>
 				<>
 					<NavBar />
 					<ApplicationViews />
 				</>
-			// </Authorized>
-
 		} />
+		<Route path="/services" element={ <ServiceList />} />
 	</Routes>
 }
 
