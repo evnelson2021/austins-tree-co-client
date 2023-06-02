@@ -7,7 +7,7 @@ export const NavBar = () => {
     return (
         <ul className="navbar">
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/home">Home</Link>
+                <Link className="navbar__link" to="/">Home</Link>
             </li>
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/services">Services</Link>
@@ -18,16 +18,6 @@ export const NavBar = () => {
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/contact">Contact</Link>
             </li>
-            {/* {
-                localStorage.getItem("tree_user")
-                    ? <li className="navbar__item navbar__logout">
-                        <Link className="navbar__link" to="" onClick={() => {
-                            localStorage.removeItem("tree_user")
-                            navigate("/", {replace: true})
-                        }}>Logout</Link>
-                    </li>
-                    : ""
-            } */}
         </ul>
     )
 }
